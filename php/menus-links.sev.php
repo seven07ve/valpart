@@ -35,6 +35,20 @@ function ingreso(){
 	 echo '</div>';
 }
 
+function rs($pag){
+	if ($pag == 'home'){
+	echo '<div class="rs">
+        <a href="https://www.facebook.com/CorporacionValpartsCa" target="_blank"><img src="imagenes/face.fw.png" width="37" height="36" alt=""/></a>
+        <a href="https://twitter.com/Valparts" target="_blank"><img src="imagenes/twitter.fw.png" width="37" height="36" alt=""/></a>
+        </div>';
+	}
+	else{
+			echo '<div class="rs">
+        <a href="https://www.facebook.com/CorporacionValpartsCa" target="_blank"><img src="../imagenes/face.fw.png" width="37" height="36" alt=""/></a>
+        <a href="https://twitter.com/Valparts" target="_blank"><img src="../imagenes/twitter.fw.png" width="37" height="36" alt=""/></a>
+        </div>';
+	}
+}
 function menu($lan,$pag){
 	//coloca los vinculos y la clase cuando no se esta en home
 	$who = '"../quienes-somos/" class="boton-men"';

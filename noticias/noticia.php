@@ -33,7 +33,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','noticia'); ?>
+<?php 
+echo rs('');
+echo menu('','noticia');
+?>
 		</div>
     </div>
   </nav>
@@ -60,7 +63,7 @@ while($fila = $resultado->fetch_array(MYSQLI_ASSOC)){
 </section>
 </div>
 	<footer>
-	<?php echo pie(""); ?>
+	<?php echo pie("","noticia"); ?>
     <br clear="all">
     <div class="derechos"><?php echo creditos(); ?></div>
     </footer>

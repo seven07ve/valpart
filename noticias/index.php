@@ -60,7 +60,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','noti'); ?>
+<?php 
+echo rs('');
+echo menu('','noti');
+?>
 		</div>
     </div>
   </nav>

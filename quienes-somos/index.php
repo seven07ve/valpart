@@ -24,7 +24,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','who'); ?>
+<?php 
+echo rs('');
+echo menu('','who');
+?>
 		</div>
     </div>
   </nav>

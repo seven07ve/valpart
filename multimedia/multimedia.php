@@ -33,7 +33,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','mult'); ?>
+<?php 
+echo rs('');
+echo menu('','mult');
+?>
 		</div>
     </div>
   </nav>

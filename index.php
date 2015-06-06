@@ -25,7 +25,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','home'); ?>
+<?php 
+echo rs('home');
+echo menu('','home');
+?>
 		</div>
     </div>
   </nav>
@@ -61,7 +64,7 @@ Foreach ($archivo as $valor)
  <!--NUESTROS PRODUCTOS-->
  <div class="cont-secc" style="margin:5px 15px 25px 3px;">
      <div class="tit-secc">NUESTROS PRODUCTOS</div>
-     <div class="secc-prod"><img src="imagenes/bobina.jpg" width="400" height="245" alt=""/></div>
+     <div class="secc-prod"><img src="imagenes/productos_rally.jpg" width="400" height="245" alt=""/></div>
  </div>
  <!--NOTICIAS-->
  <div class="cont-secc" style="margin:5px 14px 25px 0px;">

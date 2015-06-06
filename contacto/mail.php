@@ -6,8 +6,8 @@ if ($_POST["nombre"] == "" or $_POST["email"] == "" or $_POST["mensaje"] == ""){
 else{
 //	$para  = 'jheancg@gmail.com' . ', '; // atención a la coma
 //	$para .= 'omarleandro@hotmail.com';
-//	$para = "ventasvalparts@gmail.com";
-	$para = "jheancg@gmail.com";
+	$para = "ventasvalparts@gmail.com";
+//	$para = "jheancg@gmail.com";
 	$asunto = ' - '.$_POST["asunto"];
 	$cuerpo='<div style="width:650px; background-color:#FF9A09; padding:50px;" align="center">
 <div style="width:600px; font-family:\'Oswald\', sans-serif; font-size:20px; color:#FFF; border:1px dashed #CDCDCD; padding:30px;">
@@ -19,7 +19,7 @@ else{
 	$headers  = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 	//dirección del remitente
-	$headers .= "From: Valparca <contacto@aromasytexturas.com.ve>\r\n";
+	$headers .= "From: Valpartca <contacto@valpartca.com>\r\n";
 	mail($para,$asunto,$cuerpo,$headers);
 /*echo '<SCRIPT LANGUAGE="javascript">location.href = "index.php?msj=1";</SCRIPT>';*/
 header('Location: index.php?msj=1');

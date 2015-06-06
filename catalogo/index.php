@@ -24,7 +24,10 @@ echo ingreso();
     </div>
     <div class="botones-men">
 		<div class="cont-botones-men">
-			<?php echo menu('','cat'); ?>
+<?php 
+echo rs('');
+echo menu('','cat');
+?>
 		</div>
     </div>
   </nav>
@@ -51,8 +54,9 @@ Foreach ($archivo as $valor)
 //para  versiones posteriores a php5.2
 //		$ultimo = explode("-",$partes_ruta['filename']);
 //para  versiones anteriores a php5.2
-		$ultimo = explode("-",str_replace(".", "",substr($partes_ruta['basename'],0,-4)));
-		echo '<a href="../catalogo/'.$valor.'" target="_blank"  style="text-decoration:none; color:#2d2d2d;"><div class="anuncio-nombre" style="margin-top:10px;">'.$valor.'</div></a><br />'."\n";
+		$ultimo = explode(".",$partes_ruta['basename']);
+		echo '<a href="../catalogo/'.$valor.'" target="_blank"  style="text-decoration:none; color:#2d2d2d; text-shadow: #888888 2px 2px 3px;">
+		<div class="anuncio-nombre" style="margin-top:10px;">'.$ultimo[0].'</div></a><br />'."\n";
 	}
 }
 echo'</div>'."\n";

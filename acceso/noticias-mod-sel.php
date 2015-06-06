@@ -30,8 +30,8 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <div align="center">
   <?php
 date_default_timezone_set('America/Caracas');
-//echo $_POST["ano"];
-//echo $_POST["mes"];
+echo $_POST["ano"];
+echo $_POST["mes"];
 //busqueda de los datos de la noticia
 if (!$_POST["ano"] and !$_POST["mes"]){
 	$ssql=sprintf("SELECT titulo, id_noticia FROM noticias WHERE ano='".date("Y")."' AND mes='".date("m")."' ORDER BY id_noticia DESC");
