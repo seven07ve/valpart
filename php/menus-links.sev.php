@@ -11,10 +11,11 @@ function buscador(){
 	echo '<div class="cont-buscador">
         <form id="form1" name="form1" method="post" style="">
           <div class="cont-select">
-            <div class="cont-mask-select"> <span>Todo&nbsp;&nbsp;<i class="fa fa-bars"></i></span> </div>
+            <div class="cont-mask-select"> <span class="cattit">Todo&nbsp;&nbsp;<i class="fa fa-bars"></i></span> </div>
             <select name="select" id="select">
-              <option value="0">Todo</option>
-              <option value="1">Carburadores</option>
+              <option class="seleccion" value="0">Todo</option>
+              <option class="seleccion" value="1">Carburadores</option>
+              <option class="seleccion" value="2">Bujías</option>
             </select>
           </div>
           <div class="cont-bot-busc"> <span><i class="fa fa-search"></i></span>

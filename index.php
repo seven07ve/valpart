@@ -12,6 +12,7 @@ include("php/dbconect.php");
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 <header>
@@ -151,5 +152,12 @@ while($fila = $resultado->fetch_array(MYSQLI_ASSOC)){
     });
   </script>
 <!-- FlexSlider -->
+<!-- cambia el titulo del select de buscador -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$("#select").on( "click", function() {
+  $( "span.cattit" ).replaceWith( '<span class="cattit">' + $( this ).find('option:selected').text() + '&nbsp;&nbsp;<i class="fa fa-bars"></i></span>' );
+});
+</script>
 </body>
 </html>
